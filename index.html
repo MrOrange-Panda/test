@@ -1,132 +1,540 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>量车定制&nbsp;&nbsp;&nbsp;社区先行--520宠爱季</title>
-	<link rel="stylesheet"  href="">
-	<style type="text/css">
-		p {
-			font-size: 10px;
-			font-family: 微软雅黑;
-		}
+  <title>量车定制社区先行</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
 
-		h1 {
-			font-size: 20px;
-			font-family: 宋体;
-			text-align: right;
-	        color: rgba(6, 8, 8, 0.621);
-		}
+    header {
+      background-color: #333;
+      color: white;
+      padding: 50px;
+    }
 
-		h2.pos_right {
-	        position:relative;
-			top:39px;
-			left:583px ;
+    nav a {
+      color: white;
+      text-decoration: none;
+      vertical-align: bottom; 
+      margin-right: 50px;
+      font-size:25px     
+    }
+
+    nav a:hover{
+				color: rgb(33, 70, 139);
+				background-color: #cacaca;
+			}
+
+    *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            width: 616px;
+            height: 390px;
+            margin: 100px auto;
+        }     
+
+        .image-container {
+          position: relative; /* 添加相对定位 */  
+          display: inline-block;
         }
 
-		h4.pos_right {
-	        position:relative;
-	        left:800px;
-		    top:50px;
+      #div1 {
+        transition: transform 0.3s ease;
+        transform-origin: center bottom;
+      }
+
+      #div1:hover {
+        transform: scale(1, 1.2);
+      }
+
+      input[type="text1"] {
+  width: 200px;
+  height: 20px;
+  border: 1px solid #ccc;
+  padding: 5px;
+  font-size: 14px;
+}
+
+button[type="submit1"] {
+  background-color: rgb(132, 129, 129);
+  color: #fff;
+  border: none;
+  padding: 6px 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+      form button {
+        background-color: #333;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+
+      main {
+      padding: 20px;
+    }
+
+    form input[type="text"],
+    form input[type="email"],
+    form input[type="password"],
+    form button {
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+
+    form button {
+      background-color: #333;
+      color: rgb(255, 255, 255);
+      border: none;
+      cursor: pointer;
+    }
+
+    h2 {
+      margin-top: 20px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    ul li {
+      margin-bottom: 5px;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 10px;
+      text-align: center;
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    .heed{
+	width:900px;
+	height:686px;
+	margin:20px auto;
+	padding:168px;
+	background:url(images/sy.png) no-repeat center center;
+	box-sizing:border-box;
+}
+h2{
+	font-size:24px;
+	text-align:center;
+	margin:16px 0; 
+} 
+p{
+	height:24px; 
+	margin-top:10px;
+}
+.advice{height:100px;}
+p span{
+	text-align:right;
+	width:85px; 
+	margin-right:15px;
+	display:inline-block;
+}
+p input{
+	height:24px;
+	}
+textarea,input{
+	vertical-align:middle;
+	resize:none;
+	border-radius:5px;
+}
+.mgn{height:28px;}
+.btn{
+	width:180px;
+	height:28px;
+	border-radius:5px;
+	background:#d9e2eb;
+}
+
+   .slideshow-container {
+      max-width: 100%;
+      position: relative;
+      margin: auto;
+      display: flex;
+      justify-content: center; /* 图片水平居中 */
+      align-items: center; /* 图片垂直居中 */
+    }
+
+    .slide {
+      height: 400px; /* 设置图片高度 */
+      display: none;
+    }
+
+    .slideshow-container {
+    width: 100%; /* 父容器的宽度 */
+  }
+  
+  .slideshow-container img {
+    width: 100%; /* 图片的宽度设置为100% */
+    height: auto; /* 设置高度为自动，保持纵横比 */
+  }
+
+
+
+  body {
+            background-color: #f1f1f1;
+            font-family: Arial, sans-serif;
+        }
+        
+        .poster {
+            position: relative; /* 设置为相对定位 */
+            margin: 0 0px; /* 左右边距，根据需要调整间距 */
+            padding: 0px;
+            width: 100%;
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            overflow: hidden; /* 裁剪超出部分的内容 */
+        }
+        
+        .title {
+            text-align: center;
+            font-size: 24px;
+            color: #333333;
+            margin-bottom: 20px;
+        }
+        
+        .content {
+            /*text-align: center;*/
+            font-size: 18px;
+            color: #666666;
+            margin-bottom: 20px;
+        }
+        
+        .button {
+            display: block;
+            width: 200px;
+            margin: 0 auto;
+            background-color: #8f8f8f;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-size: 16px;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+        
+        .button:hover {
+            background-color: #779aca;
         }
 
-		#grad1 {
-            height: 300px;
-            background-color: rgba(145, 184, 199, 0.861); /* 不支持线性的时候显示 */
-            background-image: linear-gradient(to right, rgba(62, 114, 205, 0.571) , rgba(136, 179, 186, 0.525));
-        }
 
-		h5.pos_right {
-			position: relative;
-			left: 100px;
-			top: 20px;
-		}
+      .image-gallery {
+    display: flex;
+    justify-content: space-between; /* 图片均匀分布在容器内 */
+}
 
-		h6.pos_right {
-			position: relative;
-			left: 100px;
-			top: 20px;
-		}
+.fangda {
+    display: flex;
+    list-style-type: none; /* 去除列表默认样式 */
+    padding: 0;
+}
 
-		h7.pos_right {
-			position: relative;
-			left: 100px;
-			top: 20px;
-		}
+.fangda span {
+    margin-right: 100px; /* 设置图片之间的间距 */
+    transition: transform 0.5s, box-shadow 0.5s; /* 添加平滑过渡效果 */
+}
 
-		img.pos_right {
-			position: relative;
-			left: 75px;
-			top: -522px;
-		}
+.fangda span:last-child {
+    margin-right: 0; /* 最后一张图片的右侧间距为0 */
+}
 
-		*{
-			margin: 0;	
-			padding:0;
-		}
-		
-	    .container {
-		height: 70px;
-		width:800px;
-		margin: 100px auto 0 auto;
-	    }		
-		.parent {
-			position:relative;
-		}		
-		.search {
-			width:477px;
-			height: 51px;
-			left: 154px;
-			top: -326px;
-			border-radius:18px;
-			outline: none;
-			border: 1px solid #ccc;
-			padding-left:20px;
-			position:absolute;
-		}			
-		.btn {
-			height: 35px;
-			width:35px;
-			position: absolute;
-			background: url("topbar.jpg") no-repeat -2px -99px;
-			top: 6px;
-			left: 285px;
-			border: none;
-			outline: none;
-			cursor: pointer;
-		}
-			
-		.asd {
-	        position:relative;
-	        left:1110px;
-		    top:-122px;
-        }
+.fangda span img {
+    width: 140px; /* 图片宽度 */
+}
 
-	</style>
+.fangda span:hover {
+    transform: scale(1.4); /* 鼠标悬浮时放大1.2倍 */
+    /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* 添加阴影效果 */
+}
+
+.chexing:hover {
+    transition: transform 0.7s, box-shadow 0.7s;
+    transform: scale(1.2); /* 鼠标悬浮时放大1.2倍 */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* 添加阴影效果 */
+    background-color: #64a8c1;
+    color: #fff;
+}
+
+.chexing {
+  border: none;
+  border-radius: 50%;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  padding: 10px 20px;
+  background-color: #ccc;
+  color: #000;
+  transition: background-color 0.3s ease;border: none;
+  border-radius: 50%;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  padding: 10px 20px;
+  background-color: #ccc;
+  color: #000;
+  transition: background-color 0.3s ease;
+}
+
+
+a{
+  color: #333;
+}
+a:hover {
+  color: rgb(140, 177, 255);
+}
+
+.slideshow-container:hover {
+    transform: scale(1.1); /* 鼠标悬浮时放大1.2倍 */
+    transition: transform 1s, box-shadow 1s;
+    /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* 添加阴影效果 */
+}
+
+#searchBox {
+      transition: transform 0.5s ease-in-out;
+    }
+
+
+    .dianhua {
+    display: inline-block;
+    border-right: 1px solid #000; /* 设置图片右侧的边框为1像素宽的实线，颜色为黑色 */
+    padding-right: 10px; /* 可选：添加右侧内边距以增加竖线与图片之间的距离 */
+    margin-right: 10px; /* 可选：添加右侧外边距以进一步增加竖线与图片之间的距离 */
+  }
+  
+
+  </style>
 </head>
-<body>	
-	<p><b>&nbsp;&nbsp;欢迎您的访问</b></p>
-    <hr color="#000000"/>
-	
-	<div id="grad1">
-		<h1><ins>首页</ins> &nbsp;&nbsp;&nbsp;&nbsp;我的订单&nbsp;&nbsp;&nbsp;&nbsp;实时监测&nbsp;&nbsp;&nbsp;&nbsp;创业加盟</h1>
-		<h2 class="pos_right" style="font-size: 46px;" >量车定制&nbsp;&nbsp;&nbsp;社区先行<span style="font-size: 24px;">&nbsp;<br>社区化洗车服务</span></h2>
-		<img src="denglu.jpg" class="asd" width="400px" height="301px">
-		<div class="container">
-			<form action="" class="parent">
-			<input type="text" class="search" placeholder="搜索">
-			<input type="button" name="id=" class="btn">		
-			</div> 		
-		<img src="biao2.png" class="pos_right" hspace="" width="400px" height="200px"> 	
-	</div>
-	<!--<h4 class="pos_right">我要洗车我要预约</h4>
-	<h5 class="pos_right">大众&nbsp;&nbsp;本田&nbsp;&nbsp;宝马&nbsp;&nbsp;奥迪&nbsp;&nbsp;奔驰</h5>
-	<h6 class="pos_right">全部品牌</h6>
-	<h7 class="pos_right">四门轿车&nbsp;&nbsp;商务SUV&nbsp;&nbsp;商务7座&nbsp;&nbsp;更多车型</h7>-->
-	<div>
-		<img src="jie.png" width="1700px" height="670px">
-		<p align="center" >&copy;&nbsp;&nbsp;版权所有</p>
-	</div>
-</form>
+<body>
+  <header>
+     <nav>
+      <img src="gif.gif" alt="GIF Image" width="100px" height="80px" align="left">
+      <a href="#tips">首页</a>
+      <a href="#tips">论坛</a>
+      <a href="#tips">实时监测</a>
+      <a href="#tips">个人中心</a>
+      <a href="#tips">创业加盟</a>      
+      <a href="#tips">登录/注册</a>
+      <input type="text1" id="searchBox" name="search" placeholder="请输入搜索内容">
+      <script src="script.js"></script>
+      <button type="submit1">搜索</button>
+      <img src="gif4.gif" alt="GIF Image" width="80px" height="70px" align="right">
+      <h1 align="right">量车定制&nbsp;&nbsp;&nbsp;社区先行</h1>    
+    </nav>
+   
+    </header>
+    <div id="div1">
+    <!--<img src="biao2.png" class="pos_right" hspace="" width="400px" height="200px" > <b></b>-->
+    <img src="gif2.gif" alt="GIF Image" width="220px" height="120px" align="left">
+    <img src="gif3.gif" alt="GIF Image" width="150px" height="120px" align="right">
+    </div>
+    <h2 id="1">欢迎登录</h2>
+    <form align="center">
+      <input type="text" name="username" placeholder="用户名">
+      <input type="password" name="password" placeholder="密码">
+      <button type="submit">登录</button>
+    </form>
+
+
+<div class="poster" >
+  <div class="title">洗车专场</div>
+  <div class="fangda">
+  <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="biao2.png" class="pos_right" hspace="" width="120px" height="80px" style="margin-right: 00px;"> </span>
+  <span><img src="baoma.webp" class="baoma" hspace="" width="135px" height="90px" style="margin-right: 00px;"></span>
+  <span><img src="benchi.webp" class="baoma" hspace="" width="135px" height="90px" style="margin-right: 00px;"></span>
+  <span><img src="aodi.webp" class="baoma" hspace="" width="135px" height="90px" style="margin-right: 00px;"></span>
+  <span><img src="baoshijie.webp" class="baoma" hspace="" width="135px" height="90px" style="margin-right: 00px;"></span>
+  <span><img src="changan.webp" class="baoma" hspace="" width="135px" height="90px" style="margin-right: 00px;"></span>
+  <button class="chexing"><strong>更多车型</strong></button>
+  </div>
+  <div class="content">
+    <span>&nbsp;&nbsp;&nbsp;&nbsp;优质服务，值得信赖</span>
+    <span style="margin-right: 130px;"></span>
+    <span><a href="https://www.bmw.com.cn/zh/index.html"><strong>宝马</strong></a></span>
+    <span style="margin-right: 200px;"></span>
+    <span><a href="https://www.mercedes-benz.com.cn/"><strong>奔驰</strong></a></span>
+    <span style="margin-right: 200px;"></span>
+    <span><a href="https://www.audi.cn/"><strong>奥迪</strong></a></span>
+    <span style="margin-right: 190px;"></span>
+    <span><a href="https://www.porsche.cn/china/zh/models/"><strong>保时捷</strong></a></span>
+    <span style="margin-right: 195px;"></span>
+    <span><a href="https://www.changan.com.cn/"><strong>长安</strong></a></span>
+  </div>
+  <a href="#tips" class="button" align="center">一键估价</a>
+</div>
+<div>
+  &nbsp;
+</div>
+<div>
+  &nbsp;
+</div>
+    <div class="slideshow-container">
+      <img src="a.jpg" alt="Image 1" class="slide">
+      <img src="b.jpg" alt="Image 2" class="slide">
+      <img src="c.jpg" alt="Image 3" class="slide">
+      <img src="d.jpg" alt="Image 3" class="slide">
+    </div>
+  
+    <script>
+      let slideIndex = 0;
+      showSlides();
+  
+      function showSlides() {
+        const slides = document.getElementsByClassName("slide");
+        
+        // 隐藏所有图片
+        for (let i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        
+        // 显示当前轮播图
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+        slides[slideIndex - 1].style.display = "block";
+        
+        // 每隔几秒切换下一张图片
+        setTimeout(showSlides, 3000); // 3秒切换一次
+      }
+    </script>
+
+<div>
+  &nbsp;
+</div>
+<div>
+  &nbsp;
+</div>
+
+    <heed action="http://www.acdt.edu.cn/tsg/" method="post" accept-charset="utf-8" >
+      <h2 id="tips">注册</h2>
+  
+      <p align="center">
+      <span>性质</span>
+      <input type="radio" checked="checked">&nbsp;&nbsp;个人
+      <input type="radio">&nbsp;&nbsp;公司
+        </p>
+  
+        <p align="center">
+      <span>昵称</span>
+      <input type="text" placeholder="请在这里输入你的昵称" maxlength="10">
+        </p>
+  
+        <p align="center">
+      <span>密码</span>
+      <input type="password" size="30">
+        </p>
+  
+        <p align="center">
+      <span>Email</span>
+      <input type="email" placeholder="请在这里输入你的邮箱" readonly multiple="10">
+        </p>
+  
+        <p align="center">
+      <span>所在地</span>
+      <select>
+        <option selected="selected"></option>
+        <option>六安</option>
+        <option>合肥</option>
+        <option>安庆</option>
+        <option>淮北</option>
+        <option>亳州</option>
+        <option>芜湖</option>
+        <option>黄山</option>
+        <option>宣城</option>
+        <option>马鞍山</option>
+      </select>
+        </p>
+  
+        <p align="center">
+          <span>身份证号码</span>
+          <input type="text" required pattern="^\d{8,8}|[0-9x]{10,18}?$" title="必须填写">
+        </p>
+  
+        <p align="center">
+          <span>手机号码</span>
+          <input type="tel" pattern="^\d{11}$" required>
+        </p>
+  
+        <p class="advice" align="center">
+          <span>个性签名</span>
+          <textarea rows="5" cols="50" class="message"></textarea>
+        </p>
+  
+        <p class="mgn" align="center">
+          <span></span>
+          <input type="submit" value="注册" class="btn">
+          <input type="reset" value="重置" class="btn">
+        </p>
+      <p align="center">
+      已有帐号？
+      <a href="#1" target="_blank">登录</a>					
+      </p>
+  </heed>
+
+<div>
+  &nbsp;
+</div>
+<div>
+  &nbsp;
+</div>
+<div>
+  &nbsp;
+</div>
+<div>
+  &nbsp;
+</div>
+<hr>
+<div>
+  &nbsp;
+</div>
+<div>
+  &nbsp;
+</div>
+
+<div  class="dianhua-wei" align="center">
+    <img src="dianhua.png" alt="Image 1" class="dianhua" width="60px" height="75px">
+获取帮助
+    <img src="chaxun.png" alt="Image 1" class="dianhua" width="60px" height="75px">
+查询门店
+  <img src="shouhou.png" alt="Image 1" class="dianhua" width="60px" height="75px">
+    <span>售后服务</span>
+</div>
+
+<div>
+  &nbsp;
+</div>
+<div>
+  &nbsp;
+</div>
+
+    <h2>相关链接</h2>
+    <ul align="center">
+      <li><a href="#">量车定制指南</a></li>
+      <div>
+        &nbsp;
+      </div>
+      <li><a href="#">用户帮助中心</a></li>
+      <div>
+        &nbsp;
+      </div>
+      <li><a href="#">联系我们</a></li>
+    </ul>
+<div>
+  &nbsp;
+</div>
+  <footer>
+    <!-- 添加页脚内容 -->
+    <p>&copy; 2023 量车定制社区先行. All rights reserved.</p>
+  </footer>
 </body>
 </html>
